@@ -1,4 +1,5 @@
 import re
+import sys
 from traceback import print_tb
 # Constantes
 TESTE   = False
@@ -110,3 +111,6 @@ def tokeniza(exp):
     if posicao == len(exp):
         print("ERRO")
     return tokenizado
+
+if __name__ == "__main__":
+    tokeniza("conta=pi*(2+8(-7))")
